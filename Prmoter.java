@@ -6,39 +6,46 @@ public class Prmoter {
 	{
 System.out.println("Start of java program");
 Scanner sc=new Scanner(System.in);
-double total=0.0;
 System.out.println("ENTER THE PRICE");
 double price=sc.nextDouble();
 System.out.println("Enter your choice");
 int n=sc.nextInt();
-switch(n)
-{
+double dp,ddc,td,pd;
+switch(n) {
+
 case 0:
-	double d1=price*10.0/100.0;
-	double de1=price*8.0/100.0;
-	System.out.println(d1);
-	System.out.println(de1);
-	break;
+dp=10.0/100.0*price;
+ddc=8.0/100.0*price;
+td=dp-ddc;
+pd=price-td;
+break;
 case 1:
-	double d2=price*2.0/100.0;
-	double de2=price*1.0/100.0;
-	System.out.println(d2);
-	System.out.println(de2);
+	dp=2.0/100.0*price;
+	ddc=1.0/100.0*price;
+	td=dp-ddc;
+	pd=price-td;
+	System.out.println(td);
+	System.out.println(pd);
 	break;
 case 2:
-	double d3=price*5.0/100.0;
-	double de3=price*5.0/100.0;
-	System.out.println(d3);
-	System.out.println(de3);
+	dp=5.0/100.0*price;
+	ddc=5.0/100.0*price;
+	td=dp-ddc;
+	pd=price-td;
+	System.out.println(td);
+	System.out.println(pd);
 	break;
 case 3:
-	double d4=price=7.5/100.0;
-	double de4=price*10.0/100.0;
-	System.out.println(d4);
-	System.out.println(de4);
+	dp=7.5/100.0*price;
+	ddc=10.0/100.0*price;
+	td=dp-ddc;
+	pd=price-td;
+	System.out.println(td);
+	System.out.println(pd);
+	break;
 	default:
-		System.out.println("WRONG CHOICE");
-		
+		System.out.println("wrong choice");
+	
 }
 }
 
